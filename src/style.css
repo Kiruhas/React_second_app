@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .header {
   position: absolute;
+  top: 0;
   height: 60px;
   background-color: #384d47;
   width: 100%;
@@ -96,5 +97,43 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 0;
   }
 }
-  
+
+/* Intro */
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.intro_content {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  padding: 20px 10px;
+  border: 3px solid #384d47;
+  border-radius: 1em;
+}
+
+.intro_clock {
+  display: block;
+  font-size: 35px;
+  margin: 20px 0;
+}
+
+.intro_clock_sup {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+/* About Me */
+
+.about_header {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px 0;
+}
   

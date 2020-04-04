@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
-import Header from './Header'
+import AllPage from './AllPage'
 
-  function PrintMainPage () {
-    return (
-      Header() // Шапка
-    );
-  }
-  
   // ========================================
-  
-  ReactDOM.render(
-    PrintMainPage(),
+
+ReactDOM.render(
+    <AllPage/>,
     document.getElementById('root')
   );
   
