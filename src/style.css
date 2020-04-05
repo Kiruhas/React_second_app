@@ -1,6 +1,5 @@
 body {
   margin: 0 auto;
-  background-color: #cfd9ce;
   color: rgb(0, 0, 0);
   font-family: 'Montserrat', sans-serif;
 }
@@ -106,6 +105,8 @@ h1,h2,h3,h4,h5,h6 {
   height: 100vh;
   width: 100%;
   text-align: center;
+  background: url('./Images/gologramma_shema_scifi_139294_2560x1600.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .intro_content {
@@ -113,14 +114,16 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
   font-size: 45px;
   padding: 20px 10px;
-  border: 3px solid #384d47;
+  border: 4px solid #384d47;
   border-radius: 1em;
+  background-color: #576b65;
 }
 
 .intro_clock {
   display: block;
   font-size: 35px;
   margin: 20px 0;
+  color: #cfd9ce;
 }
 
 .intro_clock_sup {
@@ -129,11 +132,140 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* About Me */
+.about_page {
+  display: block;
+  background-color: #a1c0b6;
+}
+
 
 .about_header {
   font-family: 'Spicy Rice', cursive;
   font-size: 30px;
   text-align: center;
   padding: 30px 0;
+}
+
+.about_header::after {
+  display: block;
+  content: "";
+  height: 2px;
+  margin: 10px auto;
+  width: 150px;
+  background-color: #a54e25;
+}
+
+.about_skills_title {
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.skills_item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 20%;
+  height: auto;
+
+  text-align: center;
+}
+
+.skills_item_name  {
+  padding: 10px 0;
+}
+
+.progress_bar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 35px;
+  border: 2px solid #576b65;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.progress_bar_result {
+  position: absolute;
+  width: 0%;
+  height: 35px;
+}
+
+.progress_bar_result.welldone1 {
+  background-color: #93E43A;
+  animation-name: progress_bar_animate_html;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.progress_bar_result.welldone2 {
+  background-color: #DAEC3D;
+  animation-name: progress_bar_animate_css;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.progress_bar_result.welldone3 {
+  background-color: #FF7E40;
+  animation-name: progress_bar_animate_js;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.progress_bar_result.welldone4 {
+  background-color: #FF7373;
+  animation-name: progress_bar_animate_react;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.progress_bar_percent{
+  z-index: 10;
+}
+
+@keyframes progress_bar_animate_html {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 85%;
+    opacity: 1;
+  }
+}
+@keyframes progress_bar_animate_css {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 70%;
+    opacity: 1;
+  }
+}
+@keyframes progress_bar_animate_js {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 40%;
+    opacity: 1;
+  }
+}
+@keyframes progress_bar_animate_react {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 20%;
+    opacity: 1;
+  }
 }
   

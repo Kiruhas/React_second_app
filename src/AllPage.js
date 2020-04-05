@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import IntroPage from './IntroPage/IntroPage';
-import SecondPage from './SecondPage';
+import SecondPage from './SecondPage/SecondPage';
 
 
 class AllPage extends React.Component{
@@ -9,7 +9,7 @@ class AllPage extends React.Component{
         return(
             <div>
                 <div><IntroPage/></div>
-                <div><SecondPage/></div>       
+                <div><SecondPage/></div>    
             </div>
         )
     }
